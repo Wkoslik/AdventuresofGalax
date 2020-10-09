@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="utf-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<H1 id="highScore">Highscore: 0</h1>
+<h1 id="score">Score: 0</h1>
+<div id="game">
+<img src='./p3_walk02.png' id="player">
+<img src='./slime.png' id="obstacle">
+<img src='./ground.png' id="ground">
+</div>
+<div class="button">
+<button onclick="restart()" id="restart">Restart</button>
+<button onclick="deleteData();" id="resetScore">Reset Highscores</button>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

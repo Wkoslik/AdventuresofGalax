@@ -1,0 +1,606 @@
+/* Universal styling */
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #24668F;
+}
+
+
+h1 {
+  padding-top: 32px;
+  margin: 0;
+  text-align: center;
+  font-size: 48px;
+  color: whitesmoke;
+  text-decoration: underline;
+  text-shadow: -5px 0 black, 0 1px black, 1px 0 black, 0 -5px black;
+}
+
+/* Start Page */
+
+.dont{
+  display: none;
+}
+#start {
+  text-align: center;
+  font-size: 24px;
+  color: whitesmoke;
+  margin: 16px;
+  padding: 16px;
+  background-color: #24668F;
+}
+
+#start h3 {
+  text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding: 8px;
+}
+
+.noth1 {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.characters,
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.galax,
+.blobbies,
+.directions,
+.controls {
+  margin: 16px;
+  padding-top: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid whitesmoke;
+  background-color: #79B5DB;
+  letter-spacing: 2px;
+  border-radius: 20px;
+}
+
+.galax img {
+  width: auto;
+  height: 40%;
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+}
+
+.blobbies img {
+  padding: 16px;
+  align-items: center;
+  margin: auto;
+}
+
+.directions {
+  justify-content: flex-start;
+}
+
+.directions p {
+  font-size: 16px;
+  padding: 16px;
+  align-items: center;
+  margin: auto;
+}
+
+
+.controls img {
+  width: 60%;
+  height: auto;
+  padding: 16px;
+  align-items: center;
+  margin: auto;
+}
+
+#startbtn {
+  height: 150px;
+  width: 150px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  color: whitesmoke;
+  background-color: #79b5db;
+  border: 1px solid whitesmoke;
+  text-shadow: -5px 0 black, 0 1px black, 1px 0 black, 0 -5px black;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  margin-top: 32px;
+}
+
+#startbtn:hover {
+  font-size: 48px;
+  background-color: #aeeac5;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  transition: all 500ms ease-in;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (max-width: 1050px) {
+  h1 {
+    padding-top: 3vw;
+    font-size: 5vw;
+  }
+
+  #start h3 {
+    font-size: 1.5vw;
+    letter-spacing: .25vw;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .galax img {
+    height: 35%;
+    padding: 1vw;
+  }
+
+  .blobbies img {
+    padding: 1vw;
+    width: 50%;
+    height: auto;
+  }
+
+  .directions p {
+    font-size: 1vw;
+    padding: 1.25vw;
+  }
+
+  .controls img {
+    width: 80%;
+    height: auto;
+    padding: 0px;
+    align-items: center;
+    margin: auto;
+  }
+
+  #startbtn {
+    height: 100px;
+    width: 100px;
+    font-size: 2vw;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+    margin-top: 3vw;
+  }
+
+  #startbtn:hover {
+    font-size: 2.5vw;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .noth1 {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  #start h3 {
+    font-size: 2.5vw;
+  }
+
+  .characters,
+  .details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .galax img {
+    height: 50%;
+  }
+
+  .blobbies img {
+    width: auto;
+    height: 50%;
+  }
+
+  .directions,
+  .controls,
+  .galax,
+  .blobbies {
+    height: 25vh;
+    width: 45vw;
+  }
+
+  .directions p {
+    font-size: 1.5vw;
+    padding: 1.25vw;
+  }
+
+  .controls img {
+    width: 75%;
+  }
+
+  #startbtn {
+    height: 100px;
+    width: 100px;
+    font-size: 3vw;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+    margin-top: 3vw;
+  }
+
+  #startbtn:hover {
+    font-size: 3.5vw;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+  @media screen and (max-width: 700px) {
+    .noth1 {
+      display: block;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
+    }
+
+    #start h3 {
+      font-size: 3vw;
+    }
+
+    .characters,
+    .details {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .galax img,
+    .blobbies img {
+      height: 30%;
+    }
+
+
+    .directions,
+    .controls,
+    .galax,
+    .blobbies {
+      height: 20vh;
+      width: 45vw;
+    }
+
+    .directions p {
+      font-size: 1.5vw;
+      padding: 1.25vw;
+    }
+
+    .controls img {
+      width: 75%;
+    }
+
+    .directions p {
+      font-size: 2vw;
+    }
+    #startbtn {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .dont{
+      display: block;
+      color: whitesmoke;
+      text-align: center;
+    }
+    .dont img{
+      padding-top: 5vw;
+    }
+    .dont h2{
+      font-size: 4vw;
+      padding: 5vw;
+      letter-spacing: .5vw;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .dont h3{
+      font-size: 3.5vw;
+      letter-spacing: .5vw;
+      padding: 0 5vw;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    #start, #loser, #score, 
+    #highscore, #restart, #resetScore, 
+    #game, #character, #block, 
+    #block1, #block2, #block3,
+    #block4, #block5, #block6, 
+    #block7, #block8, #block9, #block10 {
+      display: none;
+    }
+
+  }
+
+
+  /* Game Styling */
+
+  #score, #highScore, 
+  #restart, #resetScore {
+    display: none;
+    margin: 16px;
+    padding: 16px;
+    letter-spacing: 2px;
+    justify-content: center;
+  }
+
+  #score, #highScore{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 50%;
+  }
+
+  .scores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: whitesmoke;
+    
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    color: whitesmoke;
+    
+  }
+
+  #restart, #resetScore{
+    width: 25%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: whitesmoke;
+    background-color: #79b5db;
+    border: 1px solid whitesmoke;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #restart:hover{
+    font-size: 32px;
+    background-color: #aeeac5;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transition: all 500ms ease-in;
+    cursor: pointer;
+
+  }
+
+  #resetScore:hover{
+    font-size: 32px;
+    background-color: #eca9f4;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    transition: all 500ms ease-in;
+    cursor: pointer;
+  }
+
+  
+  #game {
+    display: none;
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url('./background.png');
+    background-size: contain;
+  }
+  
+  #character {
+    width: 72px;
+    height: 97px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+  }
+  
+  #block{
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: 270px;
+    left: 480px;
+    animation: bounce-5 6s infinite linear;
+  }
+
+  #block1{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-5 5s infinite linear;
+  }
+
+  #block3{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-6 4s infinite linear;
+  } 
+
+  #block5 {
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-5 3s infinite linear;
+  }  
+
+  #block7{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-5 2s infinite linear;
+  }  
+
+  #block9 {
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-6 1s infinite linear;
+  }  
+
+#block2{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: block 5s infinite linear;
+  }  
+
+  #block4{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: block 4s infinite linear;
+  }  
+
+  #block6{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: bounce-6 3s infinite linear;
+  }  
+
+  #block8{
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: block 2s infinite linear;
+  }  
+
+  #block10 {
+    display: none;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    left: 480px;
+    animation: block 1s infinite linear;
+  }  
+
+  @media screen and (max-width: 1000px) {
+    #character{
+      width: 7.5vw;
+      height: 10vw;
+      background-size: contain;
+    }
+    #block, #block1, #block2, #block3,
+    #block4, #block5, #block6, #block7, 
+    #block8, #block9, #block10{
+      width: 5vw;
+      height: 4vw;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    #score, #highScore, 
+    #restart, #resetScore {
+      margin: 1.5vw;
+      padding: 1.5vw;
+      font-size: 3vw;
+    }
+  
+    .scores, .buttons{
+      padding: 1.5vw;
+    }
+
+  }
+
+
+  @keyframes block {
+    0% {
+      left: 100%;
+    }
+  
+    100% {
+      left: -10%;
+    }
+}
+
+@keyframes bounce-5 {
+    0%   { transform: scale(1,1)    translateY(0); left: 100%; }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-25px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    74%  { transform: scale(1.1, .9) translateY(0)}
+    84%  { transform: scale(.9,1.1) translateY(-25px); }
+    100% { transform: scale(1,1)    translateY(0); left: 0%;}
+}
+
+@keyframes bounce-6 {
+    0%   { transform: scale(1,1)    translateY(0); left: 100%; }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(25px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(7px); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    74%  { transform: scale(1.1, .9) translateY(0)}
+    84%  { transform: scale(.9, 1.1) translateY(25px); }
+    100% { transform: scale(1,1)    translateY(0); left: 0%;}
+}
+
+
+/* you lost */
+
+#loser {
+  display: none;
+}
+
+#loser h1{
+  padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+@media screen and (max-width: 900px) {
+  #loser h1{
+    padding: 1.25vw;
+    font-size: 4vw;
+  }
+}

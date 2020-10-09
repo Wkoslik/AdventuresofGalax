@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@669&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>The Adventures of Galax</h1>
+    <div class="dont">
+      <img src='./p3_hurt.png'>
+      <h2>Oh no! You're trying to play 'The Adventures of Galax' on a screen size that isn't supported yet!</h2>
+      <h3>Please try again from a *slightly* larger screen size.</h3>
+    </div>
+    <div id="start">
+        <div class="noth1">
+        <div class="characters">
+        <div class="galax">
+        <h3>Meet Galax.</h3>
+        <img src="./p3_walk02.png">
+        </div>
+        <div class="blobbies">
+        <h3>Meet the blobbies.</h3>
+        <img src="./slime4.png">
+        </div>
+        </div>
+        <div class="details">
+        <div class="directions">
+        <h3>Directions</h3>
+        <p>Use your arrow keys to dodge the blobbies for as long as possible.</p>
+      </div>
+      <div class="controls">
+        <h3>Controls</h3>
+            <img src='./controlsv2.png'>
+          </div>
+          </div>
+        </div>
+    <button onclick="start()" id="startbtn">Start</button>
+  </div>
+    <div class="scores">
+      <h2 id="highScore">High Score: 0</h1>
+      <h2 id="score">Score: 0</span>
+
+
+    </div>
+
+
+    <div id="game">
+      <img src="./p3_walk02.png" id ="character">
+      <img src="./slime.png" id ="block">
+      <img src="./slime.png" id ="block1">
+      <img src="./slime.png" id ="block2">
+      <img src="./slime.png" id ="block3">
+      <img src="./slime.png" id ="block4">
+      <img src="./slime.png" id ="block5">
+      <img src="./slime.png" id ="block6">
+      <img src="./slime.png" id ="block7">
+      <img src="./slime.png" id ="block8">
+      <img src="./slime.png" id ="block9">
+      <img src="./slime.png" id ="block10">
+    </div>
+
+    <div id="loser">
+      <h1>You lost! Play Again?</h1>
+    </div>
+
+    <div class="buttons">
+      <button onclick="restart()" id="restart">Restart</button>
+      <button onclick="deleteData();" id="resetScore">Reset Highscores</button>
+    </div>
+
+  </body>
+  <script src="scriptv2.js"></script>
+
+</html>
